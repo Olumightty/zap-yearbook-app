@@ -19,7 +19,7 @@ export default function RootLayout({
         className={`antialiased bg-(--black) font-[family-name:var(--font-montserrat)]`}
       >
         <NavBar/>
-        <main className="p-20">
+        <main className="mt-20">
           {children}
         </main>
       </body>
