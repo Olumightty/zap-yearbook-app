@@ -17,6 +17,7 @@ const Students = () => {
                     nickname='Courserep' 
                     bibleVerse='John 3:16' 
                     wisdomQuote='You have to continue pushing hard till you can’t no more. cause life is very funy and a lot of blah and i am trying to find a way to fill up this place so that it won’t look all blahish. Thank you for reading nothing'
+                    socials={{instagram: '', x: '', linkedin: '', github: ''}}
                 /> )
             }
         </div>

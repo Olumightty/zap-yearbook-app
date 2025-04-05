@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Link from 'next/link';
 
 interface FlipCardProps {
     imageUrl: string,
@@ -11,6 +12,12 @@ interface FlipCardProps {
     nickname: string
     bibleVerse: string
     wisdomQuote: string
+    socials:{
+        instagram: string,
+        x: string 
+        linkedin: string
+        github: string
+    }
 }
 const FlipCard = (props: FlipCardProps) => {
   const cardRef = useRef(null);
@@ -87,10 +94,10 @@ const FlipCard = (props: FlipCardProps) => {
             <p className="text-white mb-2"><span className="font-bold">Wise Saying:</span> {props.wisdomQuote || 'N/A'}</p>
           </div>
           <div className=' flex items-center gap-5'>
-            <img src="/instagram.svg" alt="instagram" />
-            <img src="/x.svg" alt="x" />
-            <img src="/linkedin.svg" alt="linkedin" />
-            <img src="/github.svg" alt="github" />
+            <Link href={'#'}><img src="/instagram.svg" alt="instagram" /></Link>
+            <Link href={'#'}><img src="/x.svg" alt="x" /></Link>
+            <Link href={'#'}><img src="/linkedin.svg" alt="linkedin" /></Link>
+            <Link href={'#'}><img src="/github.svg" alt="github" /></Link>
           </div>
         </div>
       </div>

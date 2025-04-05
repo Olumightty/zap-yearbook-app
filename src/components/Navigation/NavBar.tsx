@@ -3,10 +3,12 @@ import NavLink from './NavLink'
 
 const NavBar = () => {
   return (
-    <ul className='sticky top-0 bg-(--black) z-20 w-full flex justify-end gap-40 px-20 py-5 items-center'>
-      <NavLink href='/'>computer engineering</NavLink>
-      <NavLink href='/events'>events</NavLink>
-    </ul>
+    <nav className='sticky top-0 bg-(--black) z-20 px-20 py-5 w-full'>
+      <ul className='flex justify-end gap-40 items-center'>
+        <NavLink href='/'>computer engineering</NavLink>
+        <NavLink href='/events'>events</NavLink>
+      </ul>
+    </nav>
   )
 }
 
