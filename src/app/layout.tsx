@@ -16,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased bg-(--black) font-[family-name:var(--font-montserrat)]`}
       >
         <NavBar/>
-        {children}
+        <main className="p-20">
+          {children}
+        </main>
       </body>
     </html>
   );

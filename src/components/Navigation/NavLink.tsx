@@ -10,8 +10,8 @@ const NavLink = ({children, href} : {
 }) => {
   const path = usePathname()
   return (
-    <li className={clsx('cursor-pointer  font-[family-name:var(--font-vt323)] flex items-center gap-2 text-4xl', path === href ? 'text-(--black) bg-(--white)': 'text-(--white)')}>
-      {path === href && <div className='w-1 h-1 bg-(--red) rounded-full'/>}
+    <li className={clsx('cursor-pointer  px-5 font-[family-name:var(--font-vt323)] flex items-center gap-2 text-4xl', path === href ? 'text-(--black) bg-(--white) rounded-full border-2 border-(--red)': 'text-(--white)')}>
+      {path === href && <div className='w-2 h-2 bg-(--red) rounded-full'/>}
       <Link href={`${href}`}>{children}</Link>
     </li>
   )
