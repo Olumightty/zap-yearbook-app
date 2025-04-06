@@ -51,13 +51,13 @@ export default function SliderContainer() {
         
         
         {/* Swiper container */}
-        <div className= "overflow-x-scroll pb-2 lg:overflow-x-hidden no-scrollbar ml-3"  >
+        <div className= "overflow-x-scroll pb-2 lg:overflow-hidden no-scrollbar ml-3"  >
           <div 
-            className="flex gap-8 transition-transform duration-300 ease-in-out" 
+            className="flex h-[180px] items-center gap-8 transition-transform duration-300 ease-in-out" 
             style={{ transform: `translateX(-${activeIndex * (105)}%)` }}
           >
-            {images.map((image) => (
-              <ImageBox href='#' key={image.id} src={image.url} alt={image.alt}/>
+            {images.map((image, i) => (
+              <ImageBox href={{pathname: `/`, query: {id: i}}} key={image.id} src={image.url} alt={image.alt}/>
             ))}
           </div>
         </div>
