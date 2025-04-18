@@ -1,5 +1,4 @@
 import React from 'react'
-import SliderContainer from '../Hero/SliderContainer'
 import FlipCard from './FlipCard'
 
 

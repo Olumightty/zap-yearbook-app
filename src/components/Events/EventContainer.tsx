@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowLeftCircle, ArrowRightCircle } from 'lucide-react'
+import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 

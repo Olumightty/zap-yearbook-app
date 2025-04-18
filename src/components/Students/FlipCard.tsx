@@ -94,10 +94,10 @@ const FlipCard = (props: FlipCardProps) => {
             <p className="text-white mb-2"><span className="font-bold">Wise Saying:</span> {props.wisdomQuote || 'N/A'}</p>
           </div>
           <div className=' flex items-center gap-5'>
-            <Link href={'#'}><img src="/instagram.svg" alt="instagram" /></Link>
-            <Link href={'#'}><img src="/x.svg" alt="x" /></Link>
-            <Link href={'#'}><img src="/linkedin.svg" alt="linkedin" /></Link>
-            <Link href={'#'}><img src="/github.svg" alt="github" /></Link>
+            <Link href={'#'}><Image src="/instagram.svg" alt="instagram" /></Link>
+            <Link href={'#'}><Image src="/x.svg" alt="x" /></Link>
+            <Link href={'#'}><Image src="/linkedin.svg" alt="linkedin" /></Link>
+            <Link href={'#'}><Image src="/github.svg" alt="github" /></Link>
           </div>
         </div>
       </div>
