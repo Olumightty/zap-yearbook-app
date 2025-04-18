@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ImageBox from './ImageBox';
 
@@ -57,7 +57,10 @@ export default function SliderContainer() {
             style={{ transform: `translateX(-${activeIndex * (105)}%)` }}
           >
             {images.map((image, i) => (
-              <ImageBox href={{pathname: `/`, query: {id: i}}} key={image.id} src={image.url} alt={image.alt}/>
+              <Suspense key={image.id}>
+                <ImageBox href={{pathname: `/`, query: {id: i}}} src={image.url} alt={image.alt}/>
+              </Suspense>
+              
             ))}
           </div>
         </div>
