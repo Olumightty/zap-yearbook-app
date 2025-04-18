@@ -7,6 +7,9 @@ import Footer from "@/components/Footer/Footer";
 export const metadata: Metadata = {
   title: "CEN Yearbook",
   description: "Official Yearbook Website for 20th Set Computer Engineering, Covenant University",
+  icons: {
+    icon: "/logo.svg",
+  }
 };
 
 export default function RootLayout({
